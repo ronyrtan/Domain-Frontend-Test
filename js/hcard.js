@@ -1,5 +1,4 @@
-$(document).ready( function() {
-  // Personal Details
+// Personal Details
 
 // captures the values of the input fields into a variable
 // which is output onto the hCard preview.
@@ -66,4 +65,3 @@ $('#countryInput').on('keyup', function(){
   var country = $(this).val();
   $('#country').text(country);
 });
-})
