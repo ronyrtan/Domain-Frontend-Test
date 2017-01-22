@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" class="style">
+</head>
+<body>
+  <div class="content">
+
+    <!-- Info / Left side where information is input -->
+    <div class="info">
+      <h1>hCard Builder</h1>
+      <div class="personalDetails">
+        <h3>PERSONAL DETAILS</h3>
+        <div class="pDContainer">
+          <div class="input inputSpace">
+            <label>GIVEN NAME</label>
+            <input id="givenNameInput">
+          </div>
+          <div class="input">
+            <label>SURNAME</label>
+            <input id="surnameInput">
+          </div>
+          <div class="input inputSpace">
+            <label>EMAIL</label>
+            <input id="emailInput">
+          </div>
+          <div class="input">
+            <label>PHONE</label>
+            <input id="phoneInput">
+          </div>
+        </div>
+      </div>
+
+      <div class="address">
+        <h3>ADDRESS</h3>
+        <div class="aContainer">
+          <div class="input inputSpace">
+            <label>HOUSE NAME OR #</label>
+            <input id="houseNumberInput">
+          </div>
+          <div class="input">
+            <label>STREET</label>
+            <input id="streetInput">
+          </div>
+          <div class="input inputSpace">
+            <label>SUBURB</label>
+            <input id="suburbInput">
+          </div>
+          <div class="input">
+            <label>STATE</label>
+            <input id="stateInput">
+          </div>
+          <div class="input inputSpace">
+            <label>POSTCODE</label>
+            <input id="postcodeInput">
+          </div>
+          <div class="input">
+            <label>COUNTRY</label>
+            <input id="countryInput">
+          </div>
+        </div>
+      </div>
+      <div class="buttonCont">
+        <input type="button" class="button" id="uploadAvatar" value="Upload Avatar">
+        <input type="button" class="button" id="createhCard" value="Create hCard">
+      </div>
+    </div>
+
+    <!-- hCard Preview -->
+    <div class="preview">
+      <h3>HCARD PREVIEW</h3>
+      <div class="hCard">
+        <div class="hCardHeader">
+          <h2 id="name"></h2>
+          <div class="avatarContainer">
+            <img id="avatar" src="img/avatar.png" alt="avatar">
+          </div>
+        </div>
+
+        <div class="hCardInfoCont">
+          <div class="hCardInfo">
+            <label>EMAIL</label>
+            <h2 id="email"></h2>
+          </div>
+          <div class="hCardInfo">
+            <label>PHONE</label>
+            <h2 id="phone"></h2>
+          </div>
+          <div class="hCardInfo">
+            <label>ADDRESS</label>
+            <h2 id="addressLineOne"></h2>
+          </div>
+          <div class="hCardInfo">
+            <label id="addressLabelTwo">ADDRESS</label>
+            <h2 id="addressLineTwo"></h2>
+          </div>
+          <div class="hCardInfo">
+            <label>POSTCODE</label>
+            <h2 id="postcode"></h2>
+
+            <label id="countryLabel">COUNTRY</label>
+            <h2 id="country"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="js/hcard.js"></script>
+</body>
+</html>
